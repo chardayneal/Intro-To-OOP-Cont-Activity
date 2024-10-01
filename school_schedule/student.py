@@ -5,6 +5,8 @@ class Student:
         self.classes = classes
 
     def add_class(self, class_name):
+        if not class_name:
+            return self.classes
         self.classes.append(class_name)
         return self.classes
 
